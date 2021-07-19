@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <script type="text/javascript" src="lib/jquery.min.js"></script>
+    <script type="text/javascript" src="lib/osql.js"></script>
+
+    <script>
+        var userid = sessionStorage.getItem('userid');
+        var username = sessionStorage.getItem('username');
+        var belong = sessionStorage.getItem('belong');
+        
+        function buttonPressed() {
+
+        }
+    </script>
+
+</head>
+
+<body>
+    <h1>株式会社宮川紹介　備品管理システム</h1>
+    <div>
+        <h2>備品情報登録</h2>
+        <hr>
+        商品名：<input id="tf1" value="" type="textfield">
+        <br>
+        型番：<input id="tf2" value="" type="textfield">
+        <br>
+        分類：<select>
+            <option></option>
+        </select>
+        <br>
+        <button onclick="buttonPressed()">登録</button>
+    </div>
+</body>
+
+</html>
